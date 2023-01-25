@@ -14,10 +14,10 @@ following the account credentials you found in the first part. When prompted, en
 
 ## Trying Some Commands
 Once connected, you can perform terminal commands as if on that computer. For example:
-1. `cd` - Changes working directory
+1. `cd folder1` - Changes working directory to 'alw022'
 2. `ls` - Lists files and folders in current directory
 3. `pwd` - Prints path of working directory
-4. `mkdir` - Makes new directory
-5. `cp` - Copies files
-6. `cat` - Prints file content
+4. `mkdir folder2` - Makes new directory called test
+5. `cp file1.txt folder2` - Copies file1.txt to folder2
+6. `cat file1.txt` - Prints contents of file1.txt
 ![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-01-16%20at%2012.23.14%20PM.png)

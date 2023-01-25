@@ -14,10 +14,10 @@ following the account credentials you found in the first part. When prompted, en
 
 ## Trying Some Commands
 Once connected, you can perform terminal commands as if on that computer. For example:
-1. cd (change directory)
-2. ls (list)
-3. pwd (print working directory)
-4. mkdir (make directory)
-5. cp (copy)
-6. cat (concatenate)
+1. `cd` - Changes working directory
+2. `ls` - Lists files and folders in current directory
+3. `pwd` - Prints path of working directory
+4. `mkdir` - Makes new directory
+5. `cp` - Copies files
+6. `cat` - Prints file content
 ![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-01-16%20at%2012.23.14%20PM.png)

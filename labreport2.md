@@ -35,7 +35,7 @@ class StringServer {
 
 First Test:  
 ![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-01-30%20at%208.29.28%20AM.png)
- - Calls ```handleRequest``` with url ```"/add-message?s=test"``
+ - Calls ```handleRequest``` with url ```"/add-message?s=test"```
  - Changes ```message``` from empty string to ```"test\n"```
  
 Second Test:  

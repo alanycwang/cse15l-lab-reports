@@ -35,13 +35,15 @@ class StringServer {
 
 First Test:  
 ![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-01-30%20at%208.29.28%20AM.png)
- - Calls ```handleRequest``` with url ```"/add-message?s=test"```
- - Changes ```message``` from empty string to ```"test\n"```
+ - The request calls the ```handleRequest``` method, passing  the url ```"/add-message?s=test" ``` as an argument
+ - ```handleRequest``` parses the url into the query and its contents and confirms that the name of the query is ```"s"```
+ - The given string ```"s"``` is then added to the message with a ```\n``` character to create a new line
  
 Second Test:  
 ![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-01-30%20at%208.29.43%20AM.png)
- - Calls ```handleRequest``` with url ```"/add-message?s=12345"```
- - Changes ```message``` from ```"test\n"``` to ```"test\n12345\n"```
+ - The request calls the ```handleRequest``` method, passing  the url ```"/add-message?s=test" ``` as an argument
+ - ```handleRequest``` parses the url into the query and its contents and confirms that the name of the query is ```"s"```
+ - The given string ```"s"``` is then added to the message with a ```\n``` character to create a new line
 
 ## Part 2: List Methods
 I created a new class: ```class AChecker implements StringChecker``` to test the filter method. AChecker's checkString method returns true when the given string's first char is ```a```:  

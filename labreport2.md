@@ -38,12 +38,14 @@ First Test:
  - The request calls the ```handleRequest``` method, passing  the url ```"/add-message?s=test" ``` as an argument
  - ```handleRequest``` parses the url into the query and its contents and confirms that the name of the query is ```"s"```
  - The given string ```"s"``` is then added to the message with a ```\n``` character to create a new line
+ - The resulting string is now ```"s\n"```
  
 Second Test:  
 ![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-01-30%20at%208.29.43%20AM.png)
- - The request calls the ```handleRequest``` method, passing  the url ```"/add-message?s=test" ``` as an argument
+ - The request calls the ```handleRequest``` method, passing  the url ```"/add-message?s=12345" ``` as an argument
  - ```handleRequest``` parses the url into the query and its contents and confirms that the name of the query is ```"s"```
- - The given string ```"s"``` is then added to the message with a ```\n``` character to create a new line
+ - The given string ```"12345"``` is then added to the message with a ```\n``` character to create a new line
+ - The resulting string is now ```"s\n12345\n"```
 
 ## Part 2: List Methods
 I created a new class: ```class AChecker implements StringChecker``` to test the filter method. AChecker's checkString method returns true when the given string's first char is ```a```:  

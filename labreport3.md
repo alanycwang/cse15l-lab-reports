@@ -53,5 +53,93 @@ written_2/travel_guides/berlitz1/HandRJerusalem.txt
 [Source](https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size)
 
 ## Find empty files and directories
+Use the ```-empty``` option to search for files and directories that are empty. This can be especially useful when clearing up space and deleting unused folders.
 
+Example 1:
+```
+alanwang@Alans-MacBook-Pro docsearch % find ./ -empty
+.//.git/objects/info
+.//.git/refs/tags
+.//.git/branches
+```
+
+Example 2:
+```
+alanwang@Alans-MacBook-Pro docsearch % find written_2 -empty
+```
+There is no output as ```written_2``` contains no empty files or folders
+
+[Sourcse](https://askubuntu.com/questions/719912/how-to-find-all-empty-files-and-folders-in-a-specific-directory-including-files)
+
+## Find -type
+Use ```-type``` followed by ```d``` or ```f``` to specify a search for directories or files. This is useful when only looking for one of the two types.
+
+Example 1:
+```
+alanwang@Alans-MacBook-Pro docsearch % find written_2 -type d
+written_2
+written_2/non-fiction
+written_2/non-fiction/OUP
+written_2/non-fiction/OUP/Berk
+written_2/non-fiction/OUP/Abernathy
+written_2/non-fiction/OUP/Rybczynski
+written_2/non-fiction/OUP/Kauffman
+written_2/non-fiction/OUP/Fletcher
+written_2/non-fiction/OUP/Castro
+written_2/travel_guides
+written_2/travel_guides/berlitz1
+written_2/travel_guides/berlitz2
+```
+
+Example 2:
+```
+alanwang@Alans-MacBook-Pro docsearch % find written_2/non-fiction/OUP -type f
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch7.txt
+written_2/non-fiction/OUP/Abernathy/ch2.txt
+written_2/non-fiction/OUP/Abernathy/ch3.txt
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch7.txt
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Abernathy/ch8.txt
+written_2/non-fiction/OUP/Abernathy/ch9.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Rybczynski/ch2.txt
+written_2/non-fiction/OUP/Rybczynski/ch3.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch3.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch4.txt
+written_2/non-fiction/OUP/Kauffman/ch5.txt
+written_2/non-fiction/OUP/Kauffman/ch7.txt
+written_2/non-fiction/OUP/Kauffman/ch6.txt
+written_2/non-fiction/OUP/Kauffman/ch8.txt
+written_2/non-fiction/OUP/Kauffman/ch9.txt
+written_2/non-fiction/OUP/Kauffman/ch10.txt
+written_2/non-fiction/OUP/Fletcher/ch2.txt
+written_2/non-fiction/OUP/Fletcher/ch1.txt
+written_2/non-fiction/OUP/Fletcher/ch5.txt
+written_2/non-fiction/OUP/Fletcher/ch6.txt
+written_2/non-fiction/OUP/Fletcher/ch9.txt
+written_2/non-fiction/OUP/Fletcher/ch10.txt
+written_2/non-fiction/OUP/Castro/chR.txt
+written_2/non-fiction/OUP/Castro/chP.txt
+written_2/non-fiction/OUP/Castro/chQ.txt
+written_2/non-fiction/OUP/Castro/chB.txt
+written_2/non-fiction/OUP/Castro/chC.txt
+written_2/non-fiction/OUP/Castro/chA.txt
+written_2/non-fiction/OUP/Castro/chV.txt
+written_2/non-fiction/OUP/Castro/chW.txt
+written_2/non-fiction/OUP/Castro/chM.txt
+written_2/non-fiction/OUP/Castro/chZ.txt
+written_2/non-fiction/OUP/Castro/chL.txt
+written_2/non-fiction/OUP/Castro/chN.txt
+written_2/non-fiction/OUP/Castro/chY.txt
+written_2/non-fiction/OUP/Castro/chO.txt
+```
+
+[Source](https://www.tecmint.com/linux-find-command-to-search-multiple-filenames-extensions/)
 

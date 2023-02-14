@@ -52,7 +52,7 @@ written_2/travel_guides/berlitz1/HandRJerusalem.txt
 
 [Source](https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size)
 
-## Find empty files and directories
+## 3 Find empty files and directories
 Use the ```-empty``` option to search for files and directories that are empty. This can be especially useful when clearing up space and deleting unused folders.
 
 Example 1:
@@ -71,7 +71,7 @@ There is no output as ```written_2``` contains no empty files or folders
 
 [Sourcse](https://askubuntu.com/questions/719912/how-to-find-all-empty-files-and-folders-in-a-specific-directory-including-files)
 
-## Find -type
+## 4 Find by type
 Use ```-type``` followed by ```d``` or ```f``` to specify a search for directories or files. This is useful when only looking for one of the two types.
 
 Example 1:

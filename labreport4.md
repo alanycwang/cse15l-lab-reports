@@ -17,6 +17,7 @@ git add .
 git commit -m test
 git push
 ```
+4. ```<enter>```
 ## Explanation:
 
  - Pressing the up button brings up the last command used, which, given the right setup, should be ```ssh cs15lwi23axi@ieng6.ucsd.edu```

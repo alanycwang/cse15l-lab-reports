@@ -3,21 +3,25 @@
 ## Lab Competition Procedure: 
 
 1. ```<up>```
+![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-03-12%20at%2011.46.55%20PM.png)
 2. ```<enter>```
+![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-03-12%20at%2011.47.11%20PM.png)
 3. Paste:
 ```
 git clone git@github.com:alanycwang/lab7.git
 cd lab7
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 sed -i  '43 s/1/2/1' ListExamples.java
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
- java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 git add .
 git commit -m test
 git push
 ```
+![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-03-12%20at%2011.47.11%20PM.png)
 4. ```<enter>```
+![](https://raw.githubusercontent.com/alanycwang/cse15l-lab-reports/main/Screen%20Shot%202023-03-12%20at%2011.53.58%20PM.png)
 ## Explanation:
 
  - Pressing the up button brings up the last command used, which, given the right setup, should be ```ssh cs15lwi23axi@ieng6.ucsd.edu```
